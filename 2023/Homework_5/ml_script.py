@@ -3,7 +3,12 @@ import pickle
 
 
 def load_data():
-    model_file = "model1.bin"
+    # The docker container has 2 different models.
+    # So, write "model1.bin" instead of the current
+    # string below to change the model to the first one:
+    # ------------------------------------------------------------------------------
+    model_file = "model2.bin"
+    # ------------------------------------------------------------------------------
     dv_file = "dv.bin"
 
     with open(model_file, "rb") as f_in:

@@ -4,6 +4,7 @@ from ml_script import load_data
 
 app = Flask("credit")
 
+
 @app.route("/predict", methods=["POST"])
 def predict():
     client = request.get_json()
